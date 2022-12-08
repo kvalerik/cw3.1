@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwkarapaeva.BuyController">
+    <children>
+        <AnchorPane layoutX="50.0" layoutY="56.0" prefHeight="288.0" prefWidth="500.0" style="-fx-background-color: #00FFFF; -fx-background-radius: 30;">
+            <children>
+                <TextField fx:id="fioInput" layoutX="79.0" layoutY="30.0" prefHeight="26.0" prefWidth="342.0" promptText="ФИО..." />
+                <PasswordField fx:id="pasportInput" layoutX="79.0" layoutY="70.0" prefHeight="26.0" prefWidth="342.0" promptText="Номер паспорта..." />
+                <Button layoutX="191.0" layoutY="165.0" mnemonicParsing="false" onAction="#onClickApply" prefHeight="37.0" prefWidth="118.0" text="Применить">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="191.0" layoutY="210.0" mnemonicParsing="false" onAction="#onClickCancel" prefHeight="26.0" prefWidth="118.0" text="Отмена">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+            <PasswordField fx:id="numberInput" layoutX="78.0" layoutY="111.0" prefHeight="26.0" prefWidth="342.0" promptText="Серийный номер..." />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

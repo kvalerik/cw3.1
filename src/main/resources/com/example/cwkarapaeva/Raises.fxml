@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwkarapaeva.RaisesController">
+<children>
+    <AnchorPane layoutX="434.0" layoutY="12.0" prefHeight="375.0" prefWidth="146.0" style="-fx-background-color: #00FFFF; -fx-background-radius: 30;">
+        <children>
+            <Button fx:id="addButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="37.0" prefWidth="118.0" text="Добавить">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="editButton" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="37.0" prefWidth="118.0" text="Изменить">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="buttonDel" layoutX="14.0" layoutY="102.0" mnemonicParsing="false" onAction="#onClickDel" prefHeight="37.0" prefWidth="118.0" text="Удалить">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="323.0" mnemonicParsing="false" onAction="#onClickExit" prefHeight="37.0" prefWidth="118.0" text="Выход">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+        </children>
+    </AnchorPane>
+    <TableView fx:id="tableRaises" layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="407.0" style="-fx-background-color: #00FFFF;">
+        <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+    </TableView>
+</children>
+</AnchorPane>
