@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TicketsController">
+    <children>
+        <AnchorPane layoutX="434.0" layoutY="12.0" prefHeight="375.0" prefWidth="146.0" style="-fx-background-color: #00FFFF; -fx-background-radius: 30;">
+            <children>
+                <Button fx:id="aboutButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickAbout" prefHeight="37.0" prefWidth="118.0" text="Справка">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="rulesButton" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#onClickRules" prefHeight="37.0" prefWidth="118.0" text="Правила">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="14.0" layoutY="323.0" mnemonicParsing="false" onAction="#onClickExit" prefHeight="37.0" prefWidth="118.0" text="Выход">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            <Button fx:id="btnHistory" layoutX="14.0" layoutY="105.0" mnemonicParsing="false" onAction="#onHistory" prefHeight="37.0" prefWidth="118.0" text="Текущие">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="reportButton" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#onClickReport" prefHeight="37.0" prefWidth="118.0" text="Выписка">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTop" layoutX="14.0" layoutY="197.0" mnemonicParsing="false" onAction="#onTop" prefHeight="37.0" prefWidth="118.0" text="Топ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tableTickets" layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="407.0" style="-fx-background-color: #00FFFF;">
+            <columns>
+                <TableColumn fx:id="colFullname" prefWidth="101.5999755859375" text="ФИО" />
+                <TableColumn fx:id="colSource" prefWidth="80.00006103515625" text="Откуда" />
+            <TableColumn fx:id="colDestination" prefWidth="84.800048828125" text="Куда" />
+            <TableColumn fx:id="colType" prefWidth="69.5999755859375" text="Тип" />
+            <TableColumn fx:id="colDate" prefWidth="75.20001220703125" text="Дата" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RaisesController">
+<children>
+    <AnchorPane layoutX="434.0" layoutY="12.0" prefHeight="375.0" prefWidth="146.0" style="-fx-background-color: #00FFFF; -fx-background-radius: 30;">
+        <children>
+            <Button fx:id="addButton" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="37.0" prefWidth="118.0" text="Добавить">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="editButton" layoutX="14.0" layoutY="92.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="37.0" prefWidth="118.0" text="Изменить">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="buttonDel" layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#onClickDel" prefHeight="37.0" prefWidth="118.0" text="Удалить">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="323.0" mnemonicParsing="false" onAction="#onClickExit" prefHeight="37.0" prefWidth="118.0" text="Выход">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <TextField fx:id="searchInput" layoutX="14.0" layoutY="14.0" onKeyTyped="#onKeyTypedSearch" prefHeight="26.0" prefWidth="118.0" promptText="Поиск..." />
+        </children>
+    </AnchorPane>
+    <TableView fx:id="tableRaises" layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="407.0" style="-fx-background-color: #00FFFF;">
+        <columns>
+            <TableColumn fx:id="colSource" prefWidth="86.40002727508545" text="Откуда" />
+            <TableColumn fx:id="colDestination" prefWidth="87.199951171875" text="Куда" />
+            <TableColumn fx:id="colDate" prefWidth="80.79997253417969" text="Дата" />
+            <TableColumn fx:id="colCostBusiness" prefWidth="52.0" text="Б/К" />
+            <TableColumn fx:id="colCostStandart" prefWidth="65.5999755859375" text="Стандарт" />
+            <TableColumn fx:id="colRecomendation" prefWidth="36.79998779296875" />
+        </columns>
+    </TableView>
+</children>
+</AnchorPane>
